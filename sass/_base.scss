@@ -1,0 +1,38 @@
+$color-black:black;
+$color-grey : #111111;
+$color-greyLight : #f9f9f9;
+$color-greyLightTwo : #eeeeee;
+$color-yellow:#ffbd00;
+
+//Break Points 
+$break-smallest: 600px;
+$break-small: 900px;
+$break-large: 1200px;
+* {
+	margin: 0;
+	padding: 0;
+	 
+}
+*,
+*:after ,
+*:before {
+	box-sizing: border-box;
+}
+button{
+
+}
+ 
+html {
+    box-sizing: border-box;
+    font-size: 80%; // 1rem = 10px, 10px/16px = 62.5%
+	@media screen and (max-width: $break-small) {
+   		font-size: 90%;
+	}
+}
+body{
+	font-family:Myriad Pro Regular;
+	  
+ }
+button{
+	border-style: none;
+}

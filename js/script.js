@@ -1,5 +1,8 @@
+export const basket = document.querySelectorAll('.items__toggles').length;
+export const cart = document.querySelector('.sectionTwo__error');
+export let products = document.querySelectorAll('.items__product');
 window.onload = function() {
-    var products = document.querySelectorAll('.items__product');
+
     products.forEach(function(item) {
         item.addEventListener('click', function() {
             this.classList.toggle('items__toggles');
@@ -7,8 +10,7 @@ window.onload = function() {
     });
 
     function addToBasket() {
-        const basket = document.querySelectorAll('.items__toggles').length;
-        const cart = document.querySelector('.sectionTwo__error');
+
 
         if (basket === 0) {
 
